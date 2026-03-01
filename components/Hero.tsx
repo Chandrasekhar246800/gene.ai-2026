@@ -144,22 +144,12 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* RIGHT SIDE - Bio → AI Transformation */}
+          {/* RIGHT SIDE - Bio → AI Transformation (Desktop Only) */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, delay: 0.5 }}
             className="relative hidden lg:block"
-          >
-            <BioAIHeroVisual />
-          </motion.div>
-
-          {/* Mobile: Simplified Visual */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.8 }}
-            className="relative lg:hidden h-64"
           >
             <BioAIHeroVisual />
           </motion.div>
