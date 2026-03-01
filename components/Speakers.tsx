@@ -71,39 +71,48 @@ function SpeakerCard({ speaker, index, isInView }: SpeakerCardProps) {
         duration: 0.5, 
         delay: index * 0.05,
       }}
-      className="rounded-2xl border border-slate-700 bg-slate-900/40 backdrop-blur-md p-6 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full flex flex-col"
+      className="group rounded-2xl border border-slate-700 bg-slate-900/40 backdrop-blur-md p-6 text-center transition-all duration-300 hover:border-emerald/50 hover:shadow-2xl hover:shadow-emerald/20 hover:-translate-y-3 hover:bg-slate-900/60 h-full flex flex-col cursor-pointer"
     >
       {/* Speaker Avatar */}
       <div className="mb-4">
-        <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-emerald/30 to-electric/30 border-2 border-emerald/50 flex items-center justify-center">
-          <Mic className="text-emerald" size={32} />
-        </div>
+        <motion.div 
+          className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-emerald/30 to-electric/30 border-2 border-emerald/50 flex items-center justify-center transition-all duration-300 group-hover:border-emerald group-hover:from-emerald/40 group-hover:to-electric/40 group-hover:shadow-lg group-hover:shadow-emerald/30"
+          whileHover={{ scale: 1.1, rotate: 5 }}
+          transition={{ duration: 0.3 }}
+        >
+          <Mic className="text-emerald transition-all duration-300 group-hover:scale-110 group-hover:text-white" size={32} />
+        </motion.div>
       </div>
 
       {/* Speaker Info */}
       <div className="space-y-2 flex-grow flex flex-col">
         <div className="min-h-[56px] flex items-center justify-center">
-          <h3 className="text-lg font-semibold text-white">
+          <h3 className="text-lg font-semibold text-white transition-colors duration-300 group-hover:text-emerald">
             {speaker.name}
           </h3>
         </div>
         
-        <div className="flex items-start justify-center gap-2 text-sm text-emerald-400">
-          <Building className="flex-shrink-0 mt-0.5" size={14} />
+        <div className="flex items-start justify-center gap-2 text-sm text-emerald-400 transition-colors duration-300 group-hover:text-emerald-300">
+          <Building className="flex-shrink-0 mt-0.5 transition-transform duration-300 group-hover:scale-110" size={14} />
           <p className="font-medium">{speaker.designation}</p>
         </div>
 
-        <p className="text-sm text-slate-400">
+        <p className="text-sm text-slate-400 transition-colors duration-300 group-hover:text-slate-300">
           {speaker.organization}
         </p>
 
         {speaker.location && (
-          <div className="flex items-center justify-center gap-1 text-xs text-slate-500 mt-auto pt-2">
-            <MapPin size={12} />
+          <div className="flex items-center justify-center gap-1 text-xs text-slate-500 mt-auto pt-2 transition-colors duration-300 group-hover:text-slate-400">
+            <MapPin size={12} className="transition-transform duration-300 group-hover:scale-110" />
             <span>{speaker.location}</span>
           </div>
         )}
       </div>
+      
+      {/* Hover indicator line */}
+      <motion.div 
+        className="h-1 w-0 bg-gradient-to-r from-emerald to-electric mx-auto mt-4 rounded-full transition-all duration-300 group-hover:w-full"
+      />
     </motion.div>
   );
 }
