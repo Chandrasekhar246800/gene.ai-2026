@@ -107,14 +107,24 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-white hover:text-emerald transition-colors"
-            aria-label="Toggle menu"
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {/* Mobile Header - Register Button & Menu */}
+          <div className="lg:hidden flex items-center gap-3">
+            <a
+              href={eventConfig.registrationLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-gradient-to-r from-emerald to-electric text-white rounded-full font-semibold text-sm hover:shadow-lg hover:shadow-emerald/50 transition-all duration-300"
+            >
+              Register
+            </a>
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="p-2 text-white hover:text-emerald transition-colors"
+              aria-label="Toggle menu"
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -141,14 +151,6 @@ export default function Navbar() {
                     {link.name}
                   </a>
                 ))}
-                <a
-                  href={eventConfig.registrationLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full text-center px-6 py-2.5 bg-gradient-to-r from-emerald to-electric text-white rounded-full font-semibold mt-4"
-                >
-                  Register Now
-                </a>
               </div>
             </motion.div>
           )}
