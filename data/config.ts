@@ -9,7 +9,7 @@ export const eventConfig = {
   phone: ["9597377761", "9150581602"],
   
   deadlines: {
-    abstract: "March 10, 2026",
+    abstract: "March 14, 2026",
     registration: "March 14, 2026",
   },
   
