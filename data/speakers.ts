@@ -4,6 +4,7 @@ export interface Speaker {
   designation: string;
   organization: string;
   location?: string;
+  image?: string;
 }
 
 export const speakers: Speaker[] = [
@@ -26,6 +27,7 @@ export const speakers: Speaker[] = [
     designation: "Director of Hepatology & Transplant Hepatology",
     organization: "Gleneagles Hospitals",
     location: "Chennai",
+    image: "/images/Dr.Joy Vargheese.jfif.jpeg",
   },
   {
     id: 4,
@@ -33,12 +35,14 @@ export const speakers: Speaker[] = [
     designation: "Professor, Oncologist",
     organization: "SRMC",
     location: "Chennai",
+    image: "/images/Dr Jagadesh Chandrabose.jpg.jpeg",
   },
   {
     id: 5,
     name: "Dr. Sampathkumari",
     designation: "Secretary",
     organization: "TNFOG",
+    image: "/images/Prof.-Dr.-S.-Sampathkumari0.jpg.jpeg",
   },
   {
     id: 6,
@@ -46,6 +50,7 @@ export const speakers: Speaker[] = [
     designation: "Consultant",
     organization: "Janani Fertility Centre",
     location: "Trichy",
+    image: "/images/Dr schitra.png",
   },
   {
     id: 7,
@@ -53,6 +58,7 @@ export const speakers: Speaker[] = [
     designation: "Consultant",
     organization: "CSI Kalyani Hospital",
     location: "Chennai",
+    image: "/images/Dr.Hepsiba.webp",
   },
   {
     id: 8,
@@ -60,6 +66,7 @@ export const speakers: Speaker[] = [
     designation: "Professor, Biophotonics",
     organization: "IITM",
     location: "Chennai",
+    image: "/images/Dr.Sujatha.png",
   },
   {
     id: 9,
@@ -67,12 +74,14 @@ export const speakers: Speaker[] = [
     designation: "Scientist F",
     organization: "ICMR – NIRT",
     location: "Chennai",
+    image: "/images/Hanna-Luke-Elizabeth.jpg.jpeg",
   },
   {
     id: 10,
     name: "Prof. H Shakila",
     designation: "Professor",
     organization: "Madurai Kamaraj University",
+    image: "/images/Dr.H.Shakila.jfif.jpeg",
   },
   {
     id: 11,
@@ -87,24 +96,28 @@ export const speakers: Speaker[] = [
     designation: "Professor, President AOGIN",
     organization: "AHPGIC",
     location: "Cuttack",
+    image: "/images/Dr.backialakshmi Nayak.jfif.jpeg",
   },
   {
     id: 13,
     name: "Dr. Suchitra N Pandit",
     designation: "FOGSI Representative to SAFOG",
     organization: "Surya Group of Hospitals",
+    image: "/images/dr_suchitra N Pandit.jpg.jpeg",
   },
   {
     id: 14,
     name: "Dr. Anshumala Shukla Kulkarni",
     designation: "Endometriosis Surgeon",
     organization: "Kokilaben Dhirubhai Ambani Hospital",
+    image: "/images/Dr.Anushumala Shukla.jpg.jpeg",
   },
   {
     id: 15,
     name: "Dr. Anchana Devi",
     designation: "CEO",
     organization: "Rudraks Diagnostics",
+    image: "/images/Dr.Anchana Devi.jfif.jpeg",
   },
   {
     id: 16,
@@ -119,6 +132,7 @@ export const speakers: Speaker[] = [
     designation: "Surgeon",
     organization: "Kauvery Hospital",
     location: "Chennai",
+    image: "/images/Dr babu.jpg.jpeg",
   },
   {
     id: 18,
@@ -126,6 +140,7 @@ export const speakers: Speaker[] = [
     designation: "Nephrologist / Renal Specialist",
     organization: "IORTA Consortia",
     location: "Chennai",
+    image: "/images/Dr.Prabhu kanchi.jfif.jpeg",
   },
   {
     id: 19,
@@ -133,6 +148,7 @@ export const speakers: Speaker[] = [
     designation: "Professor",
     organization: "University of Ulster",
     location: "Londonderry, Ireland, UK",
+    image: "/images/Dr.Girijesh prasad'.jfif.jpeg",
   },
   {
     id: 20,
@@ -140,6 +156,7 @@ export const speakers: Speaker[] = [
     designation: "Team Lead, CCBT",
     organization: "DBT-INSTEM",
     location: "Bengaluru",
+    image: "/images/Dr.Neelakandan.jfif.jpeg",
   },
   {
     id: 21,
@@ -159,6 +176,7 @@ export const speakers: Speaker[] = [
     name: "Ajay Kumar",
     designation: "Founder & CEO",
     organization: "Cognibot",
+    image: "/images/Ajaykumar cognibot.jfif.jpeg",
   },
   {
     id: 24,
@@ -173,6 +191,7 @@ export const speakers: Speaker[] = [
     designation: "Director",
     organization: "Medway Institute of Pulmonology",
     location: "Chennai",
+    image: "/images/Dr-Supraja-1.jpg.jpeg",
   },
   {
     id: 26,

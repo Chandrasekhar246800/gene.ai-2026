@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
 import { speakers } from "@/data/speakers";
 import { Mic, MapPin, Building } from "lucide-react";
 
@@ -75,13 +76,29 @@ function SpeakerCard({ speaker, index, isInView }: SpeakerCardProps) {
     >
       {/* Speaker Avatar */}
       <div className="mb-4">
-        <motion.div 
-          className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-emerald/30 to-electric/30 border-2 border-emerald/50 flex items-center justify-center transition-all duration-300 group-hover:border-emerald group-hover:from-emerald/40 group-hover:to-electric/40 group-hover:shadow-lg group-hover:shadow-emerald/30"
-          whileHover={{ scale: 1.1, rotate: 5 }}
-          transition={{ duration: 0.3 }}
-        >
-          <Mic className="text-emerald transition-all duration-300 group-hover:scale-110 group-hover:text-white" size={32} />
-        </motion.div>
+        {speaker.image ? (
+          <motion.div 
+            className="w-20 h-20 mx-auto rounded-full border-2 border-emerald/50 overflow-hidden transition-all duration-300 group-hover:border-emerald group-hover:shadow-lg group-hover:shadow-emerald/30"
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
+          >
+            <Image
+              src={speaker.image}
+              alt={speaker.name}
+              width={80}
+              height={80}
+              className="w-full h-full object-cover"
+            />
+          </motion.div>
+        ) : (
+          <motion.div 
+            className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-emerald/30 to-electric/30 border-2 border-emerald/50 flex items-center justify-center transition-all duration-300 group-hover:border-emerald group-hover:from-emerald/40 group-hover:to-electric/40 group-hover:shadow-lg group-hover:shadow-emerald/30"
+            whileHover={{ scale: 1.1, rotate: 5 }}
+            transition={{ duration: 0.3 }}
+          >
+            <Mic className="text-emerald transition-all duration-300 group-hover:scale-110 group-hover:text-white" size={32} />
+          </motion.div>
+        )}
       </div>
 
       {/* Speaker Info */}
