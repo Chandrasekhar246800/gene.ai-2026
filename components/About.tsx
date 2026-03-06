@@ -62,6 +62,9 @@ export default function About() {
                 <span className="text-emerald font-semibold">Centre for Drug Discovery and Development (CDDD)</span>
               </p>
               <p className="text-base md:text-lg">
+                <span className="text-emerald font-semibold">Department of BioMed</span>
+              </p>
+              <p className="text-base md:text-lg">
                 <span className="text-electric font-semibold">Department of Computer Science Engineering</span>
               </p>
               <p className="text-base md:text-lg font-medium">
