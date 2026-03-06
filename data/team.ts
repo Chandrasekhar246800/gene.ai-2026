@@ -38,7 +38,7 @@ export const organizingTeam: TeamSection[] = [
         designation: "CDDD, SIST",
       },
       {
-        name: "Dr. Lakshminandan",
+        name: "Dr. Lakshmanan",
         designation: "Prof & Dean, CSE, SIST",
       },
       {

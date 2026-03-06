@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { eventConfig } from "@/data/config";
+import Image from "next/image";
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -67,10 +68,19 @@ export default function Navbar() {
           <motion.a
             href="#home"
             onClick={(e) => handleNavClick(e, "#home")}
-            className="text-2xl font-bold bg-gradient-to-r from-emerald to-electric bg-clip-text text-transparent"
+            className="flex items-center gap-1.5 lg:gap-3 flex-shrink-0"
             whileHover={{ scale: 1.05 }}
           >
-            GENE.AI 2026
+            <Image
+              src="/images/sist-logo.jpg"
+              alt="SIST Logo"
+              width={35}
+              height={35}
+              className="object-cover rounded-full bg-white p-0.5 lg:w-[50px] lg:h-[50px] lg:p-1 flex-shrink-0"
+            />
+            <span className="text-sm lg:text-2xl font-bold bg-gradient-to-r from-emerald to-electric bg-clip-text text-transparent whitespace-nowrap">
+              GENE.AI 2026
+            </span>
           </motion.a>
 
           {/* Desktop Navigation */}

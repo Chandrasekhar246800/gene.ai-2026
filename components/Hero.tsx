@@ -19,7 +19,7 @@ export default function Hero() {
   const titleWords = titleText.split(" ");
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 lg:pt-0">
       {/* Layered Radial Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-navy-dark to-navy" />
       <div 
