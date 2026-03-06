@@ -2,6 +2,7 @@ export interface TeamMember {
   name: string;
   designation: string;
   organization?: string;
+  image?: string;
 }
 
 export interface TeamSection {
@@ -17,6 +18,7 @@ export const organizingTeam: TeamSection[] = [
         name: "Dr. Mariazeena Johnson",
         designation: "Chancellor",
         organization: "Sathyabama Institute of Science & Technology",
+        image: "/images/chancellor.webp",
       },
     ],
   },
@@ -27,6 +29,7 @@ export const organizingTeam: TeamSection[] = [
         name: "Dr. Bharathi B",
         designation: "Director (Innovation)",
         organization: "Sathyabama Institute of Science & Technology",
+        image: "/images/Bharathi.jpeg",
       },
     ],
   },

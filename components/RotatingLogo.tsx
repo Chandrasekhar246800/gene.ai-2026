@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function RotatingLogo() {
   return (
-    <div className="flex justify-center lg:justify-start mb-4 lg:mb-5">
+    <div className="flex justify-center lg:justify-start mb-2 lg:mb-3">
       {/* Complete Neuron Structure Container */}
       <div className="relative w-[320px] h-[170px] sm:w-[400px] sm:h-[200px] lg:w-[500px] lg:h-[260px]">
         {/* Neuron Axon and Terminals - Static SVG */}

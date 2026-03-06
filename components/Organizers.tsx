@@ -5,6 +5,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { organizingTeam } from "@/data/team";
 import { Crown, Award, Users, UserCheck } from "lucide-react";
+import Image from "next/image";
 
 const iconMap: Record<string, any> = {
   "Chief Patron": Crown,
@@ -69,10 +70,22 @@ export default function Organizers() {
                       transition={{ duration: 0.5, delay: sectionIndex * 0.2 + memberIndex * 0.1 }}
                       className="glass p-6 rounded-2xl glow-on-hover text-center"
                     >
-                      {/* Avatar Placeholder */}
-                      <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-emerald/30 to-electric/30 flex items-center justify-center border-2 border-emerald/50">
-                        <Users className="text-emerald" size={40} />
-                      </div>
+                      {/* Avatar / Photo */}
+                      {member.image ? (
+                        <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-2 border-emerald/50">
+                          <Image
+                            src={member.image}
+                            alt={member.name}
+                            width={96}
+                            height={96}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      ) : (
+                        <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-emerald/30 to-electric/30 flex items-center justify-center border-2 border-emerald/50">
+                          <Users className="text-emerald" size={40} />
+                        </div>
+                      )}
                       
                       <h4 className="text-lg font-bold text-white mb-2">
                         {member.name}

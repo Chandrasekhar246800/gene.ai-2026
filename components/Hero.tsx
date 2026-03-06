@@ -20,7 +20,7 @@ export default function Hero() {
   const titleWords = titleText.split(" ");
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 lg:pt-0">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 lg:pt-0">
       {/* Layered Radial Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-navy-dark to-navy" />
       <div 
@@ -34,7 +34,7 @@ export default function Hero() {
       />
 
       {/* 2-Column Grid Layout */}
-      <div className="max-w-7xl mx-auto px-6 py-20 md:py-32 w-full">
+      <div className="max-w-7xl mx-auto px-6 py-10 md:py-16 lg:py-20 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
           
           {/* LEFT SIDE - Content + Intelligence Layer */}
@@ -46,7 +46,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="space-y-8 relative z-10"
+              className="space-y-4 md:space-y-5 lg:space-y-6 relative z-10"
             >
               {/* Rotating Geometric Logo */}
               <RotatingLogo />
