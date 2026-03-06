@@ -99,23 +99,6 @@ export default function LeftIntelligenceLayer() {
           </defs>
         </svg>
       </div>
-
-      {/* AI Signal Pulse Line - Under Title */}
-      <div className="absolute top-0 left-0 w-full h-1 overflow-hidden pointer-events-none">
-        <motion.div
-          className="h-full w-32 bg-gradient-to-r from-transparent via-electric to-transparent"
-          initial={{ x: "-100%" }}
-          animate={{ x: "400%" }}
-          transition={{
-            duration: 6,
-            delay: 1,
-            repeat: Infinity,
-            repeatDelay: 6,
-            ease: "linear",
-          }}
-          style={{ filter: "blur(2px)" }}
-        />
-      </div>
     </>
   );
 }

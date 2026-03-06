@@ -5,6 +5,7 @@ import { ArrowRight, Calendar, MapPin } from "lucide-react";
 import { eventConfig } from "@/data/config";
 import BioAIHeroVisual from "./BioAIHeroVisual";
 import LeftIntelligenceLayer from "./LeftIntelligenceLayer";
+import RotatingLogo from "./RotatingLogo";
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
@@ -47,6 +48,9 @@ export default function Hero() {
               transition={{ duration: 0.8 }}
               className="space-y-8 relative z-10"
             >
+              {/* Rotating Geometric Logo */}
+              <RotatingLogo />
+
               {/* Main Heading with Letter Stagger */}
               <div className="relative">
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
@@ -70,15 +74,6 @@ export default function Hero() {
                     </span>
                   ))}
                 </h1>
-
-                {/* AI Signal Pulse Under Title */}
-                <motion.div
-                  className="mt-4 h-1 w-32 mx-auto lg:mx-0 bg-gradient-to-r from-emerald via-electric to-transparent rounded-full"
-                  initial={{ scaleX: 0, opacity: 0 }}
-                  animate={{ scaleX: 1, opacity: 0.6 }}
-                  transition={{ duration: 1, delay: 1.5 }}
-                  style={{ transformOrigin: "left" }}
-                />
               </div>
 
               {/* Tagline with Blur to Clear */}
