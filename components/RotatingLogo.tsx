@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export default function RotatingLogo() {
   return (
-    <div className="flex justify-center lg:justify-start mb-8 lg:mb-10">
+    <div className="flex justify-center lg:justify-start mb-4 lg:mb-5">
       {/* Complete Neuron Structure Container */}
-      <div className="relative w-[250px] h-[130px] sm:w-[300px] sm:h-[150px] lg:w-[380px] lg:h-[200px]">
+      <div className="relative w-[320px] h-[170px] sm:w-[400px] sm:h-[200px] lg:w-[500px] lg:h-[260px]">
         {/* Neuron Axon and Terminals - Static SVG */}
         <svg 
           viewBox="0 0 400 200" 
@@ -225,7 +225,7 @@ export default function RotatingLogo() {
             repeat: Infinity,
             ease: "linear",
           }}
-          className="absolute top-6 left-2 sm:top-8 sm:left-4 lg:top-10 lg:left-8 w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24"
+          className="absolute top-8 left-6 sm:top-10 sm:left-8 lg:top-12 lg:left-10 w-24 h-24 sm:w-28 sm:h-28 lg:w-36 lg:h-36"
         >
           {/* Hexagon Shape with Gradient Border */}
           <div className="absolute inset-0">
@@ -257,7 +257,7 @@ export default function RotatingLogo() {
             }}
             className="absolute inset-0 flex items-center justify-center"
           >
-            <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-full bg-white p-1 lg:p-1.5 shadow-lg">
+            <div className="w-16 h-16 sm:w-18 sm:h-18 lg:w-24 lg:h-24 rounded-full bg-white p-1.5 lg:p-2 shadow-lg">
               <Image
                 src="/images/sist-logo.jpg"
                 alt="SIST Logo"
