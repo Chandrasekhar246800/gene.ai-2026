@@ -1,7 +1,7 @@
 export const eventConfig = {
   name: "GENE.AI 2026",
   tagline: "Translational Research to Clinical Impact",
-  subtitle: "DST–TIDE Sponsored Summit on Genome Engineering & Artificial Intelligence",
+  subtitle: "DST–TIDE Sponsored Global Summit on Genome Engineering & Artificial Intelligence",
   date: "March 17–18, 2026",
   venue: "Sathyabama Institute of Science & Technology, Chennai",
   registrationLink: "https://forms.gle/rqS1dub6Aj41RspCA",

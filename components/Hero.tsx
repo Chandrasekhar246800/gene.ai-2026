@@ -93,7 +93,7 @@ export default function Hero() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-base md:text-lg leading-relaxed text-slate-300 max-w-3xl mx-auto lg:mx-0"
               >
-                DST–TIDE Sponsored Summit on Genome Engineering &<br className="hidden lg:inline" /> Artificial Intelligence
+                DST–TIDE Sponsored Global Summit on Genome Engineering &<br className="hidden lg:inline" /> Artificial Intelligence
               </motion.p>
 
               {/* Event Details */}
