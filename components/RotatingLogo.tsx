@@ -5,11 +5,11 @@ import Image from "next/image";
 
 export default function RotatingLogo() {
   return (
-    <div className="flex justify-center lg:justify-start mb-2 lg:mb-3">
+    <div className="flex justify-center mb-2 lg:mb-3">
       {/* Complete Neuron Structure Container */}
       <div className="relative w-[320px] h-[170px] sm:w-[400px] sm:h-[200px] lg:w-[500px] lg:h-[260px]">
-        {/* Hexagon with Logo - Centered in Left Part */}
-        <div className="absolute top-[55%] left-[43%] -translate-x-1/2 -translate-y-1/2 w-56 h-56 sm:w-64 sm:h-64 lg:w-80 lg:h-80">
+        {/* Hexagon with Logo - Centered */}
+        <div className="absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-56 h-56 sm:w-64 sm:h-64 lg:w-80 lg:h-80">
           {/* Hexagon Shape with Gradient Border */}
           <div className="absolute inset-0">
             <svg viewBox="-40 -50 180 180" className="w-full h-full" style={{ overflow: 'visible' }}>
